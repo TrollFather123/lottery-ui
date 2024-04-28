@@ -1,21 +1,41 @@
 {
   "compilerOptions": {
+    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/components/*": ["components/*"],
+      "@/api/*": ["api/*"],
+      "@/config/*": ["config/*"],
+      "@/hooks/*": ["hooks/*"],
+      "@/json/*": ["json/*"],
+      "@/layout/*": ["layout/*"],
+      "@/lib/*": ["lib/*"],
+      "@/reduxtoolkit/*": ["redux-toolkit/*"],
+      "@/styles/*": ["styles/*"],
+      "@/themes/*": ["material-ui/*"],
+      "@/ui/*": ["ui/*"],
+      "@/interface/*": ["typescript/interface/*"],
+      "@/types/*": ["typescript/types/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
