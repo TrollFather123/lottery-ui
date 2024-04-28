@@ -1,10 +1,21 @@
 export default {
   notfound: "/assets/images/404.svg",
   logo: "/vercel.svg",
-  testicon: "/assets/icons/2082.png",
-  testicon1: "/assets/icons/icon-192x192.png",
-  testicon2: "/assets/icons/icon-256x256.png",
-  testicon3: "/assets/icons/icon-384x384.png",
-  testicon4: "/assets/icons/icon-512x512.png",
-  image: "/assets/icons/auricular-phone_318-1028.webp"
+  logo_img: "/assets/images/logo_img.png",
+  story_img: "/assets/images/story_img.png",
+  banner_image: "/assets/images/banner_image.png",
+  wave1: "/assets/images/wave1.png",
+  wave2: "/assets/images/wave2.png",
+  companyLogo1: "/assets/images/01.png",
+  companyLogo2: "/assets/images/02.png",
+  companyLogo3: "/assets/images/03.png",
+  companyLogo4: "/assets/images/04.png",
+  companyLogo5: "/assets/images/05.png",
+  companyLogo6: "/assets/images/06.png",
+  companyLogo7: "/assets/images/07.png",
+  companyLogo8: "/assets/images/08.png",
+  tileBack: "/assets/images/tile.png",
+  banner_video: "/assets/images/banner_video.mp4",
+  tileVideo: "/assets/images/White.mp4",
+  image: "/assets/images/image.png"
 };

@@ -1,5 +1,3 @@
-'use client';
-
 import { checkWindow } from "@/lib/functions/_helpers.lib";
 import { useEffect } from "react";
 import useNotiStack from "./useNotistack";
