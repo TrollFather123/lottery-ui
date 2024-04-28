@@ -40,7 +40,7 @@ const Wrapper: React.FC<wrapperProps & BoxProps> = (props: wrapperProps) => {
 
   routerText.shift();
   const favText = routerText.join("").toString().toUpperCase();
-  const projectName = "Sydnia";
+  const projectName = "Lottery-UI";
 
   useOnlineStatus();
 

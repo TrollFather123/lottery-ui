@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-useless-fragment */
 /* eslint-disable no-nested-ternary */
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable mui-path-imports/mui-path-imports */
@@ -24,7 +25,10 @@ import { logout } from "@/reduxtoolkit/slices/userSlice";
 
 import { HeaderWrap } from "@/styles/StyledComponents/HeaderWrapper";
 import { primaryColors } from "@/themes/_muiPalette";
+import CustomButtonPrimary from "@/ui/CustomButtons/CustomButtonPrimary";
 import MenuIcon from "@/ui/Icons/MenuIcon";
+import CartIcon from "@/ui/Icons/cartIcon";
+import { Badge } from "@mui/material";
 import { Container } from "@mui/system";
 import useDetectScroll from "@smakss/react-scroll-direction";
 import Image from "next/image";
@@ -47,19 +51,15 @@ export default function Header(props: Props) {
   console.log(props);
   const navItems = [
     {
-      name: "Clinical studies",
+      name: "Lottery",
       route: "javascript:void(0)"
     },
     {
-      name: "The science",
+      name: "Result & Info",
       route: "javascript:void(0)"
     },
     {
-      name: "Shop",
-      route: "javascript:void(0)"
-    },
-    {
-      name: "Contact us",
+      name: "Winner",
       route: "javascript:void(0)"
     }
   ];
@@ -143,7 +143,7 @@ export default function Header(props: Props) {
                 IconWidth="32"
               />
             </IconButton>
-            {/* {isLoggedIn ? (
+            {isLoggedIn ? (
               <Box
                 sx={{ display: { xs: "none", sm: "block" } }}
                 className="navbar"
@@ -154,7 +154,7 @@ export default function Header(props: Props) {
                   variant="contained"
                   color="primary"
                 >
-                  <span>Logout</span>
+                  Logout
                 </CustomButtonPrimary>
 
                 <CustomButtonPrimary
@@ -162,7 +162,7 @@ export default function Header(props: Props) {
                   variant="contained"
                   color="primary"
                 >
-                  <span>{userData?.email}</span>
+                  <>{userData?.email}</>
                 </CustomButtonPrimary>
               </Box>
             ) : (
@@ -176,17 +176,15 @@ export default function Header(props: Props) {
                     key={item?.route}
                     className={router.pathname === item.route ? "active" : ""}
                   >
-                
                     {item?.name}
-                
                   </Link>
                 ))}
               </Box>
             )}
             <Box className="hdr_rgt">
               <Box className="cart_icon">
-                <Badge color="primary" variant="dot">
-                  <CartIcon/>
+                <Badge color="primary" badgeContent={3}>
+                  <CartIcon />
                 </Badge>
               </Box>
               <CustomButtonPrimary
@@ -194,9 +192,9 @@ export default function Header(props: Props) {
                 variant="contained"
                 color="primary"
               >
-                <Typography>Login</Typography>
+                Login
               </CustomButtonPrimary>
-            </Box> */}
+            </Box>
           </Toolbar>
         </Container>
       </AppBar>
