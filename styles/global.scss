@@ -430,15 +430,9 @@ input[type="submit"]:hover {
 
 // ==============================
 .MuiContainer-root {
-<<<<<<< HEAD
-  @media (min-width: 1400px) {
-    max-width: 1164px;
-    padding: 0 12px;
-=======
   @media (min-width: 1200px) {
     max-width: 1160px;
     padding: 0 10px;
->>>>>>> 29ef0cee066287e9ebe1f55c331e0c6915e36353
   }
   &.cus_container {
     @media (min-width: 1400px) {

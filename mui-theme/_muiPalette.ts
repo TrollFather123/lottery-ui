@@ -45,15 +45,12 @@ export const primaryColors = {
   secondaryFont: "#232323",
   tertiaryFont: "#585858",
   color77787B: "#77787B",
-<<<<<<< HEAD
   color252525: "#252525",
-  color727272: "#727272"
+  color727272: "#727272",
   // colorwhite1:"#EEEEEE",
-=======
   colordfdfdf: "#dfdfdf",
   color979797: "#979797",
   color363636: "#363636"
->>>>>>> 29ef0cee066287e9ebe1f55c331e0c6915e36353
 };
 
 export const pallete = (mode: PaletteMode): PaletteOptions => {

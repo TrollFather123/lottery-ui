@@ -18,7 +18,6 @@ export default {
   banner_video: "/assets/images/banner_video.mp4",
   tileVideo: "/assets/images/White.mp4",
   image: "/assets/images/image.png",
-<<<<<<< HEAD
   attr1: "/assets/images/attr1.jpg",
   attr2: "/assets/images/attr2.jpg",
   attr3: "/assets/images/attr3.jpg",
@@ -33,9 +32,7 @@ export default {
   winner6: "/assets/images/winner6.jpg",
   winner7: "/assets/images/winner7.jpg",
   winner8: "/assets/images/winner8.jpg",
-  gps: "/assets/images/gps.svg"
-=======
+  gps: "/assets/images/gps.svg",
   ftr_logo: "/assets/images/ftr_logo.png",
   draw_bg_img: "/assets/images/draw_bg_img.png"
->>>>>>> 29ef0cee066287e9ebe1f55c331e0c6915e36353
 };
