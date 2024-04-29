@@ -30,7 +30,7 @@ export const MuiThemeOptions = (mode: PaletteMode): ThemeOptions => {
         }
       },
       h2: {
-        fontSize: "97px",
+        fontSize: "50px",
         lineHeight: "1",
         fontWeight: "700",
         fontFamily: "Montserrat",

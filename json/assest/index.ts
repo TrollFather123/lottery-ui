@@ -17,5 +17,7 @@ export default {
   tileBack: "/assets/images/tile.png",
   banner_video: "/assets/images/banner_video.mp4",
   tileVideo: "/assets/images/White.mp4",
-  image: "/assets/images/image.png"
+  image: "/assets/images/image.png",
+  ftr_logo: "/assets/images/ftr_logo.png",
+  draw_bg_img: "/assets/images/draw_bg_img.png"
 };

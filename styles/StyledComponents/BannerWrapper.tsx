@@ -49,6 +49,7 @@ export const BannerWrapper = styled(Box)`
   .banner_text {
     h1 {
       color: ${primaryColors?.primary};
+      margin-bottom: 35px;
       span {
         font-weight: 300;
         font-size: 50px;
@@ -62,6 +63,7 @@ export const BannerWrapper = styled(Box)`
   .banner_fig {
     position: relative;
     overflow: hidden;
+    margin-bottom: -10px;
     figure {
       line-height: 1;
       font-size: 1;

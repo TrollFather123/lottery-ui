@@ -43,7 +43,10 @@ export const primaryColors = {
   tableshadow: "rgba(7, 7, 7, 0.06)",
   secondaryFont: "#232323",
   tertiaryFont: "#585858",
-  color77787B: "#77787B"
+  color77787B: "#77787B",
+  colordfdfdf: "#dfdfdf",
+  color979797: "#979797",
+  color363636: "#363636"
 };
 
 export const pallete = (mode: PaletteMode): PaletteOptions => {
