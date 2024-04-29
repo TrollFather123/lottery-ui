@@ -1,10 +1,11 @@
+/* eslint-disable no-dupe-keys */
 /* eslint-disable mui-path-imports/mui-path-imports */
 //  MUI pallete colors will be listed here
 
 import { PaletteMode, PaletteOptions } from "@mui/material";
 
 export const primaryColors = {
-  primary: "#304E91",
+  primary: "#FFAA00",
   primary1: "#D13D43",
 
   primary_600: "#5871D0",
@@ -43,7 +44,10 @@ export const primaryColors = {
   tableshadow: "rgba(7, 7, 7, 0.06)",
   secondaryFont: "#4D4E4E",
   tertiaryFont: "#585858",
-  color77787B: "#77787B"
+  color77787B: "#77787B",
+  color252525: "#252525",
+  color727272: "#727272"
+  // colorwhite1:"#EEEEEE",
 };
 
 export const pallete = (mode: PaletteMode): PaletteOptions => {

@@ -186,7 +186,7 @@ input[type="submit"]:hover {
 }
 
 .cmn_gap {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 .cmn_gap_top {
@@ -430,9 +430,9 @@ input[type="submit"]:hover {
 
 // ==============================
 .MuiContainer-root {
-  @media (min-width: 1200px) {
-    max-width: 1080px;
-    padding: 0 10px;
+  @media (min-width: 1400px) {
+    max-width: 1164px;
+    padding: 0 12px;
   }
   &.cus_container {
     @media (min-width: 1400px) {

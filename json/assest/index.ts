@@ -17,5 +17,20 @@ export default {
   tileBack: "/assets/images/tile.png",
   banner_video: "/assets/images/banner_video.mp4",
   tileVideo: "/assets/images/White.mp4",
-  image: "/assets/images/image.png"
+  image: "/assets/images/image.png",
+  attr1: "/assets/images/attr1.jpg",
+  attr2: "/assets/images/attr2.jpg",
+  attr3: "/assets/images/attr3.jpg",
+  attr4: "/assets/images/attr4.jpg",
+  attr5: "/assets/images/attr5.jpg",
+  attr6: "/assets/images/attr6.jpg",
+  winner1: "/assets/images/winner1.jpg",
+  winner2: "/assets/images/winner2.jpg",
+  winner3: "/assets/images/winner3.jpg",
+  winner4: "/assets/images/winner4.jpg",
+  winner5: "/assets/images/winner5.jpg",
+  winner6: "/assets/images/winner6.jpg",
+  winner7: "/assets/images/winner7.jpg",
+  winner8: "/assets/images/winner8.jpg",
+  gps: "/assets/images/gps.svg"
 };
