@@ -1,111 +1,154 @@
-import styled from "@emotion/styled";
+/* eslint-disable react/no-array-index-key */
 
-import CustomButtonPrimary from "@/ui/CustomButtons/CustomButtonPrimary";
-import LinkdinIcon from "@/ui/Icons/LinkdinIcon";
-import RightArrowIcon from "@/ui/Icons/RightArrowIcon";
+import assest from "@/json/assest";
+import { FooterWrap } from "@/styles/StyledComponents/FooterWrap";
+import FbIcon from "@/ui/Icons/FbIcon";
+import InstaIcon from "@/ui/Icons/InstaIcon";
+import TelegramIcon from "@/ui/Icons/TelegramIcon";
+import TwitterIcon from "@/ui/Icons/TwitterIcon";
+import WhatsAppIcon from "@/ui/Icons/WhatsAppIcon";
+import { List, ListItem } from "@mui/material";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { Box } from "@mui/system";
+import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
-const FooterWrap = styled(Box)`
-  padding: 75px 0 120px;
-  @media (max-width: 899px) {
-    padding: 75px 0;
+const ftrIconList = [
+  {
+    icon: <FbIcon />
+  },
+  {
+    icon: <InstaIcon />
+  },
+  {
+    icon: <TwitterIcon />
+  },
+  {
+    icon: <TelegramIcon />
+  },
+  {
+    icon: <WhatsAppIcon />
   }
-  .ftr-wrapper {
-    padding: 0 60px;
-    @media (max-width: 899px) {
-      padding: 0;
-    }
-    h2 {
-      max-width: 582px;
-      font-size: 60px;
-      @media (max-width: 899px) {
-        font-size: 37px;
-      }
-    }
+];
+
+const quickLinkList = [
+  {
+    name: "About us",
+    link: "/about-us"
+  },
+  {
+    name: "contact us",
+    link: "/contact-us"
   }
-  .ftr_para {
-    margin-bottom: 45px;
+];
+
+const helpLinkList = [
+  {
+    name: "FAQs",
+    link: "/faq"
+  },
+  {
+    name: "Privacy Policy",
+    link: "/privacy-policy"
+  },
+  {
+    name: "Terms of use",
+    link: "terms-condition"
   }
-  .ftr_logo {
-    line-height: 0;
-    @media (max-width: 899px) {
-      margin-bottom: 90px;
-    }
-    a {
-      line-height: 0;
-    }
+];
+
+const govermentList = [
+  {
+    name: "The lotteries (regulation) Rules, 2010",
+    link: "/rules-regulation"
+  },
+  {
+    name: "Mizoram claim form Goa claim form",
+    link: "goa-claim"
   }
-  .ftr_btm {
-    margin-top: 90px;
-    @media (max-width: 899px) {
-      margin-top: 35px;
-    }
-  }
-  .ftr_content {
-    padding-left: 70px;
-    @media (max-width: 899px) {
-      padding-left: 0px;
-    }
-    button {
-      @media (max-width: 899px) {
-        min-width: 100%;
-        span {
-          margin-right: auto;
-        }
-      }
-    }
-    p {
-      @media (max-width: 899px) {
-        br {
-          display: none;
-        }
-      }
-    }
-  }
-`;
+];
 
 const Footer = () => {
-  const router = useRouter();
   return (
     <FooterWrap>
       <Container fixed>
         <Box className="ftr-wrapper">
-          <Typography variant="h2">
-            The help you need is just a meeting away.
-          </Typography>
-          <Box className="ftr_btm">
-            <Grid container spacing={2} alignItems="flex-end">
-              <Grid item xs={12} md={5} lg={7}>
+          <Box className="ftr_upper">
+            <Grid container spacing={2}>
+              <Grid item xs={12} md={6} lg={4}>
                 <Box className="ftr_logo">
                   <Link href="/">
-                    <LinkdinIcon />
+                    <Image
+                      src={assest?.ftr_logo}
+                      alt="logo image"
+                      width={278}
+                      height={65}
+                    />
                   </Link>
+                  <Typography>
+                    Lorem ipsum dolor sit amet consectetur. Convallis libero
+                    enim accumsan
+                  </Typography>
+                  <List disablePadding>
+                    {ftrIconList?.map((data, index) => (
+                      <ListItem disablePadding key={index}>
+                        <Link href="/">{data?.icon}</Link>
+                      </ListItem>
+                    ))}
+                  </List>
                 </Box>
               </Grid>
-              <Grid item xs={12} md={7} lg={5}>
+              <Grid item xs={12} md={6} lg={2.5}>
                 <Box className="ftr_content">
-                  <Typography variant="body1" className="ftr_para">
-                    Ready to get started? Click the link to <br /> schedule a
-                    free consultation with one of <br /> our SEC experts now.
+                  <Typography variant="body1" className="ftr_head">
+                    Quick links
                   </Typography>
-                  <CustomButtonPrimary
-                    variant="contained"
-                    color="primary"
-                    onClick={() => router.push("https://calendly.com/")}
-                  >
-                    <Typography variant="caption">
-                      Schedule a Meeting
-                    </Typography>
-                    <RightArrowIcon />
-                  </CustomButtonPrimary>
+                  <List disablePadding>
+                    {quickLinkList?.map((data, index) => (
+                      <ListItem disablePadding key={index}>
+                        <Link href={data?.link}>{data?.name}</Link>
+                      </ListItem>
+                    ))}
+                  </List>
+                </Box>
+              </Grid>
+              <Grid item xs={12} md={6} lg={2.5}>
+                <Box className="ftr_content">
+                  <Typography variant="body1" className="ftr_head">
+                    Help
+                  </Typography>
+                  <List disablePadding>
+                    {helpLinkList?.map((data, index) => (
+                      <ListItem disablePadding key={index}>
+                        <Link href={data?.link}>{data?.name}</Link>
+                      </ListItem>
+                    ))}
+                  </List>
+                </Box>
+              </Grid>
+              <Grid item xs={12} md={6} lg={3}>
+                <Box className="ftr_content">
+                  <Typography variant="body1" className="ftr_head">
+                    GOVT Policy
+                  </Typography>
+                  <List disablePadding>
+                    {govermentList?.map((data, index) => (
+                      <ListItem disablePadding key={index}>
+                        <Link href={data?.link}>{data?.name}</Link>
+                      </ListItem>
+                    ))}
+                  </List>
                 </Box>
               </Grid>
             </Grid>
+          </Box>
+          <Box className="ftr_btm">
+            <Typography>
+              © 2024 Skill <Link href="/">Lotto Solutions Pvt. Ltd.</Link> All
+              Rights Reserved.
+            </Typography>
           </Box>
         </Box>
       </Container>

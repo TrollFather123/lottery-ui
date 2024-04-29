@@ -13,26 +13,27 @@ import { pallete, primaryColors } from "./_muiPalette";
  * or "dark".
  * @returns The function `MuiThemeOptions` returns a `ThemeOptions` object.
  */
+
 export const MuiThemeOptions = (mode: PaletteMode): ThemeOptions => {
   return {
     palette: pallete(mode),
     typography: {
-      fontFamily: ["Lato,Roboto"].join(","),
+      fontFamily: ["Montserrat"].join(","),
       fontSize: 16,
       h1: {
-        fontSize: "157px",
+        fontSize: "66px",
         lineHeight: "1",
-        fontWeight: "700",
-        fontFamily: "Lato",
+        fontWeight: "800",
+        fontFamily: "Montserrat",
         "@media(max-width:991px)": {
-          fontSize: "100px"
+          fontSize: "40px"
         }
       },
       h2: {
-        fontSize: "97px",
+        fontSize: "50px",
         lineHeight: "1",
         fontWeight: "700",
-        fontFamily: "Lato",
+        fontFamily: "Montserrat",
         "@media(max-width:991px)": {
           fontSize: "70px"
         }
@@ -41,7 +42,7 @@ export const MuiThemeOptions = (mode: PaletteMode): ThemeOptions => {
         fontSize: "60px",
         lineHeight: "1",
         fontWeight: "700",
-        fontFamily: "Lato",
+        fontFamily: "Montserrat",
         "@media(max-width:889px)": {
           fontSize: "37px",
           lineHeight: "1.1em"
@@ -51,7 +52,7 @@ export const MuiThemeOptions = (mode: PaletteMode): ThemeOptions => {
         fontSize: "37px",
         lineHeight: "1.3",
         fontWeight: "400",
-        fontFamily: "Lato",
+        fontFamily: "Montserrat",
         "@media(max-width:991px)": {
           fontSize: "23px",
           lineHeight: "1.3"
@@ -61,7 +62,7 @@ export const MuiThemeOptions = (mode: PaletteMode): ThemeOptions => {
         fontSize: "15px",
         lineHeight: "1.4",
         fontWeight: "500",
-        fontFamily: "Lato",
+        fontFamily: "Montserrat",
         "@media(max-width:991px)": {
           fontSize: "12px",
           lineHeight: "1.4"
@@ -71,20 +72,20 @@ export const MuiThemeOptions = (mode: PaletteMode): ThemeOptions => {
         fontSize: "12px",
         lineHeight: "1.5",
         fontWeight: "500",
-        fontFamily: "Lato",
+        fontFamily: "Montserrat",
         "@media(max-width:991px)": {
           fontSize: "12px",
           lineHeight: "1.5"
         }
       },
       body1: {
-        fontFamily: "Roboto",
+        fontFamily: "Montserrat",
         fontSize: "16px",
         lineHeight: "1.5",
         color: primaryColors?.mainFontColor
       },
       body2: {
-        fontFamily: "Roboto",
+        fontFamily: "Montserrat",
         fontSize: "14px",
         lineHeight: "1.5",
         color: primaryColors?.mainFontColor
@@ -262,8 +263,8 @@ export const MuiThemeOptions = (mode: PaletteMode): ThemeOptions => {
             ) {
               return {
                 // backgroundColor: primaryColors?.primary,
-                background: ` ${primaryColors?.primary}`,
-                borderRadius: "0px",
+                background: primaryColors?.primary,
+                color: primaryColors?.white,
 
                 "&:hover": {
                   background: `  ${primaryColors?.black} `,

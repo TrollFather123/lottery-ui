@@ -21,7 +21,7 @@ export const primaryColors = {
   black: "#000",
   bodyColor: "#F4F6F8",
   mainFontColor: "#03050b",
-  textPrimaryColor: "#070707",
+  textPrimaryColor: "#252525",
   borderprimary: "#707070",
   border_primary: "#DBE0E8",
   warning_color: "#FFEFD7",
@@ -42,12 +42,18 @@ export const primaryColors = {
   chipErrorText: "#9B3858",
   cardShadow: "#0707070F",
   tableshadow: "rgba(7, 7, 7, 0.06)",
-  secondaryFont: "#4D4E4E",
+  secondaryFont: "#232323",
   tertiaryFont: "#585858",
   color77787B: "#77787B",
+<<<<<<< HEAD
   color252525: "#252525",
   color727272: "#727272"
   // colorwhite1:"#EEEEEE",
+=======
+  colordfdfdf: "#dfdfdf",
+  color979797: "#979797",
+  color363636: "#363636"
+>>>>>>> 29ef0cee066287e9ebe1f55c331e0c6915e36353
 };
 
 export const pallete = (mode: PaletteMode): PaletteOptions => {
