@@ -78,7 +78,7 @@ const WinnerList = [
 
 export default function Winner() {
   return (
-    <WinnerWrapper>
+    <WinnerWrapper className="cmn_gap">
       <Container fixed>
         <CommonHeading title="Latest Winners" />
         <Box className="winner_wrap">
